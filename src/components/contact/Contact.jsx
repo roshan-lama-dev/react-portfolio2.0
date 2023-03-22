@@ -3,6 +3,7 @@ import React, { useRef } from "react";
 import "./contact.scss";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
+import { motion } from "framer-motion";
 export const Contact = () => {
   const form = useRef();
 
@@ -32,7 +33,11 @@ export const Contact = () => {
       <div className="left">
         <img src="assets/shake.svg" alt="shake" />
       </div>
-      <div className="right">
+      <motion.div
+        className="right"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+      >
         <h2>Contact</h2>
         <form ref={form} onSubmit={handleOnSubmit}>
           <TextField
@@ -84,7 +89,7 @@ export const Contact = () => {
           </Button>
           {/* <button type="submit">Submit</button> */}
         </form>
-      </div>
+      </motion.div>
     </div>
   );
 };
