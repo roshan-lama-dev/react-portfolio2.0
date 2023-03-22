@@ -7,7 +7,7 @@
   align-items: center;
   h1 {
     font-size: 50px;
-
+    overflow: hidden;
     @include mobile {
       font-size: 20px;
     }
@@ -29,7 +29,7 @@
 
   .conatiner {
     width: 90%;
-    height: 60%;
+    height: 80%;
     // height: 10%;
     display: flex;
     align-items: center;
@@ -40,7 +40,7 @@
 
     .item {
       width: 220px;
-      height: 220px;
+      height: 150px;
       border-radius: 20px;
       border: 1px solid rgb(240, 239, 239);
       margin: 10px 20px;
