@@ -50,7 +50,7 @@ export const Contact = () => {
             id="outlined-basic"
             label="Name"
             variant="filled"
-            name="user_name"
+            name="from_name"
           />
 
           <TextField
@@ -63,7 +63,8 @@ export const Contact = () => {
             id="outlined-basic"
             label="Email"
             variant="filled"
-            name="user_email"
+            type="email"
+            name="from_email"
           />
           <TextField
             style={{

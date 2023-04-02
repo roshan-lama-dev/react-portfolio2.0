@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Portfoliolist } from "../portfoliolist/Portfoliolist";
 import "./portfolio.scss";
-
+import OpenInBrowserIcon from "@mui/icons-material/OpenInBrowser";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import {
   featuredPortfolio,
   webPortfolio,
@@ -77,7 +78,17 @@ export const Portfolio = () => {
           return (
             <div className="item">
               <img src={item.img} alt="app" />
-              <h3>{item.title}</h3>
+              <div className="card-details">
+                <h3> {item.title}</h3>{" "}
+                <div className="linkbtn">
+                  <a className="bicon" href="">
+                    <OpenInBrowserIcon />
+                  </a>
+                  <a className="gicon" href="">
+                    <GitHubIcon />
+                  </a>
+                </div>
+              </div>
             </div>
           );
         })}

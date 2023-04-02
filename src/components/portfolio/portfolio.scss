@@ -56,9 +56,29 @@
         width: 130px;
         height: 100px;
       }
-      h3 {
+      .card-details {
+        // display: flex;
+        // flex-direction: row;
         position: absolute;
+        height: 100%;
         font-size: 20px;
+        text-align: center;
+        .linkbtn {
+          display: flex;
+          flex-direction: row;
+          position: absolute;
+
+          justify-content: space-around;
+          .bicon {
+            // font-size: 20px;
+            color: red;
+            font-size: 20px;
+          }
+          .gicon {
+            color: grey;
+          }
+          // ?ackground-color: black;
+        }
         @include mobile {
           font-size: 15px;
           text-align: center;
