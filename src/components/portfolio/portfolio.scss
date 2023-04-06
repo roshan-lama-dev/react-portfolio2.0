@@ -61,20 +61,35 @@
         // flex-direction: row;
         position: absolute;
         height: 100%;
-        font-size: 20px;
-        text-align: center;
+        font-size: 15px;
+        // text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
         .linkbtn {
           display: flex;
-          flex-direction: row;
-          position: absolute;
-
-          justify-content: space-around;
+          gap: 10px;
+          // flex-direction: row;
+          // position: absolute;
+          // align-items: center;
+          // justify-content: center;
           .bicon {
             // font-size: 20px;
-            color: red;
-            font-size: 20px;
+            // color: red;
+
+            color: grey;
+            // font-size: 20px;
+            // font-size: 50px;
+            .biconbg {
+              font-size: 50px;
+            }
           }
           .gicon {
+            .giconbig {
+              font-size: 50px;
+            }
             color: grey;
           }
           // ?ackground-color: black;

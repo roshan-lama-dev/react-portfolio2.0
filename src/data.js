@@ -34,8 +34,10 @@ export const featuredPortfolio = [
 export const webPortfolio = [
   {
     id: 1,
-    title: "Web Social Media App",
+    title: "Booking Application",
     img: "https://cdn.dribbble.com/users/5031392/screenshots/15467520/media/c36b3b15b25b1e190d081abdbbf947cf.png?compress=1&resize=1200x900",
+    livelink: "https://bookingapplication.vercel.app/",
+    repolink: "https://github.com/roshan-lama-dev/bookingApp",
   },
   {
     id: 2,

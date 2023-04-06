@@ -14,12 +14,10 @@ export const Portfolio = () => {
   const [selected, setSelected] = useState("featured");
   const list = [
     {
-      id: "featured",
-      title: "Featured",
-    },
-    {
       id: "web",
       title: "Web App",
+      livelink: "bookingapplication.vercel.app",
+      repolink: "https://github.com/roshan-lama-dev/bookingApp",
     },
     {
       id: "mobile",
@@ -81,11 +79,11 @@ export const Portfolio = () => {
               <div className="card-details">
                 <h3> {item.title}</h3>{" "}
                 <div className="linkbtn">
-                  <a className="bicon" href="">
-                    <OpenInBrowserIcon />
+                  <a className="bicon" target="_blank" href={item.livelink}>
+                    <OpenInBrowserIcon className="biconbg" />
                   </a>
-                  <a className="gicon" href="">
-                    <GitHubIcon />
+                  <a className="gicon" target="_blank" href={item.repolink}>
+                    <GitHubIcon className="giconbig" />
                   </a>
                 </div>
               </div>
