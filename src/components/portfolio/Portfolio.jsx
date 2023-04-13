@@ -4,7 +4,6 @@ import "./portfolio.scss";
 import OpenInBrowserIcon from "@mui/icons-material/OpenInBrowser";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import {
-  featuredPortfolio,
   webPortfolio,
   mobilePortfolio,
   designPortfolio,
@@ -32,10 +31,6 @@ export const Portfolio = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
     switch (selected) {
-      case "featured":
-        setData(featuredPortfolio);
-        break;
-
       case "web":
         setData(webPortfolio);
         break;

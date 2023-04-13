@@ -8,7 +8,9 @@ export const webPortfolio = [
   },
   {
     id: 2,
-    title: "Web Rampa UI Design",
+    title: "Blogging Application",
+    livelink: "https://blog-ui-lac.vercel.app/",
+    repolink: "https://github.com/roshan-lama-dev/blog-ui",
     img: "https://cdn.dribbble.com/users/3967258/screenshots/15463803/media/4fddb9a2caf3b3bd634060f706a91e73.png?compress=1&resize=1200x900",
   },
 ];
